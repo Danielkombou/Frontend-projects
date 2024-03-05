@@ -54,15 +54,6 @@ document.addEventListener('keypress',function (x){
         // field.value = ''
     }
 })
-    // if(x.keyCode == 32){
-    //     if(cardNum.length < 20){
-    //         alert('Enter at least 20 characters')
-    //         // x.preventDefault()
-    //     }
-    //     else{
-    //         console.log(getData())
-    //     }
-    // }
    
 
     function confirmation(){
@@ -87,24 +78,3 @@ function continuation(){
         })
 }
 console.log(continuation());
-
-
-
-// document.addEventListener('keydown', function(event) {
-//     if (event.key === 'Enter') {
-//         event.preventDefault(); // Prevent form submission
-//         const inputElement = event.target; // Get the input element
-//         inputElement.value = ''; // Clear the input value
-//     }
-// });
-
-
-// var email = document.getElementById("mail");
-
-// email.addEventListener("keyup", function (event) {
-//   if (email.validity.typeMismatch) {
-//     email.setCustomValidity("I expect an e-mail, darling!");
-//   } else {
-//     email.setCustomValidity("");
-//   }
-// });
