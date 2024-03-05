@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk' Grotesk;
+}
+body{
+    background-color: hsl(0, 0%, 100%);
+}
+.main-content{
+    display: flex;
+    align-items: center;
+}
+.left-content{
+    height: 100vh;
+    background-image: url(images/bg-main-desktop.png);
+    flex: 1;
+    background-size: cover;
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+.left-top-img{
+    height: 200px;
+    width: 100%;
+    background-image: url(images/bg-card-front.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    left: 100px;
+    top: 15%;
+}
+.left-bottom-img{
+    height: 200px;
+    width: 100%;
+    background-image: url(images/bg-card-back.png);
+    background-size: cover;
+    border-radius: 10px;
+    position: absolute;
+    /* margin-top: 25px; */
+    left: 180px;
+    top: 50%;
+}
+
+.right-content{
+    margin-left: 20%;
+    flex: 2;
+}
+.holder .box{
+    padding: 12px 5px;
+}
+.box #texarea, #contain {
+    width: 62%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.box input {
+    padding: 10px;
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.box #certify{
+    width: 170px;
+}
+.box #typeMonth{
+    width: 130px;
+}
+.holder #confirm-btn, #submit-btn button{
+    width: 62%;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(278, 68%, 11%);
+    border: 0;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+    margin: 10px;
+}
+#submit-btn{
+    display: none;
+}
+#submit-btn button{
+    margin-top: 50px;
+}
+#submit-btn img{
+    align-self: center;
+}
+
+
+
+
+/* ----------- media query------------ */
+
+@media (max-width: 300px) {
+    .left-bottom-img img{
+        width: 200px;
+    }
+}
